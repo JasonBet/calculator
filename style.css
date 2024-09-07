@@ -41,8 +41,14 @@ body {
 }
 
 .display {
+    padding: 10px;
     border: blue solid 2px;
     height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Arial;
+    font-size: 80px;
 }
 
 .calculator-body {
@@ -51,4 +57,27 @@ body {
     flex-grow: 1;
     display: flex;
     flex-flow: row wrap;
+    gap: 10px;
+
+}
+
+/* Styling buttons of calculator-body */
+button {
+    width: 90px;
+    border: none;
+    background-color: gray;
+    border-radius: 12px;
+
+    /* Button Font */
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.big-button {
+    width: 190px;
+}
+
+.operation {
+    background-color: orange;
+    color: white;
 }
