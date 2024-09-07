@@ -18,4 +18,37 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    padding: 20px;
+    width: 480px;
+    height: 800px;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+}
+
+.display {
+    border: blue solid 2px;
+    height: 120px;
+}
+
+.calculator-body {
+    padding: 20px;
+    border: red solid 2px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
 }
