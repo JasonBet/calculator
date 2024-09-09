@@ -33,6 +33,25 @@ function operate(num1, operator, num2) {
     }
 }
 
+function display() {
+
+}
+
 let num1;
 let operator;
 let num2;
+
+let displayVar = document.querySelector('.display')
+
+// Event Listener
+let input = document.querySelector('.calculator');
+
+input.addEventListener('click', (e) => {
+    if(e.target.nodeName == 'BUTTON'){
+        console.log(e.target.innerHTML);
+    }
+    if(e.target.classList.contains('num')){
+        console.log("Is num")
+        displayVar.textContent += e.target.innerHTML;
+    }
+})

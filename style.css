@@ -28,21 +28,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 .calculator {
     padding: 20px;
     width: 480px;
     height: 800px;
-    border: 2px solid black;
+    border: 2px solid white;
     display: flex;
     flex-flow: column nowrap;
+    background-color: gray;
     gap: 40px;
 }
 
 .display {
     padding: 10px;
-    border: blue solid 2px;
+    border: orange solid 2px;
+    background-color: black;
+    color: white;
     height: 120px;
     display: flex;
     justify-content: flex-end;
@@ -53,11 +57,12 @@ body {
 
 .calculator-body {
     padding: 20px;
-    border: red solid 2px;
+    border: orange solid 2px;
     flex-grow: 1;
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
+    background-color: black;
 
 }
 
