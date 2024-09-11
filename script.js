@@ -60,14 +60,14 @@ function display(e) {
     } else if(e.target.classList.contains('equals')){
         num2 = Number(displayVar.textContent);
         console.log('num1: ' + num1 + ' operator: ' + operator + ' num2: ' + num2);
-        displayVar.textContent = operate(num1, operator, num2);
+        displayVar.textContent = Math.round(operate(num1, operator, num2)*10000)/10000;
         num1 = null;
         operator = null;
         num2 = null; 
     } else if(e.target.classList.contains('operation') && displayVar.textContent){
         num2 = Number(displayVar.textContent);
         console.log('num1: ' + num1 + ' operator: ' + operator + ' num2: ' + num2);
-        displayVar.textContent = operate(num1, operator, num2);
+        displayVar.textContent = Math.round(operate(num1, operator, num2)*10000)/10000;
         num1 = Number(displayVar.textContent);
         if(e.target.classList.contains('plus')){
             operator = 0;
