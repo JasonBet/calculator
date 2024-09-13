@@ -53,6 +53,7 @@ body {
     align-items: center;
     font-family: Arial;
     font-size: 80px;
+    max-width: 436px;
 }
 
 .calculator-body {
